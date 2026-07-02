@@ -7,7 +7,6 @@
 <meta name="description" content="משה מרדכי קליין — מפתח Full-Stack. מערכות ארגוניות, טלפוניה ו-IVR, SQL Server, אינטגרציות ומומחה Microsoft Access — פיתוח, אוטומציה ב-VBA והסבת מערכות Access ותיקות.">
 <meta name="theme-color" content="#222c35">
 
-<!-- Open Graph — כרטיס שיתוף בוואטסאפ/מייל/פייסבוק -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MMK">
 <meta property="og:locale" content="he_IL">
@@ -54,13 +53,11 @@ body{
 }
 ::selection{background:var(--ice3);color:var(--bg)}
 
-/* ---------- scrollbar ---------- */
 ::-webkit-scrollbar{width:10px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:5px}
 ::-webkit-scrollbar-thumb:hover{background:var(--ice3)}
 
-/* ---------- nav ---------- */
 nav{
   position:fixed;top:0;right:0;left:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
@@ -101,7 +98,6 @@ nav.scrolled{
 .theme-btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media(max-width:640px){.nav-links{display:none}}
 
-/* ---------- hero ---------- */
 .hero{
   min-height:100vh;position:relative;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -156,7 +152,6 @@ nav.scrolled{
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 
-/* ---------- marquee ---------- */
 .marquee{
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
   background:var(--bg2);overflow:hidden;padding:20px 0;position:relative;
@@ -175,7 +170,6 @@ nav.scrolled{
 .marquee-track span::after{content:'✦';color:var(--ice3);font-size:.7rem}
 @keyframes scroll{to{transform:translateX(50%)}}
 
-/* ---------- sections ---------- */
 section{padding:110px 6vw;max-width:1200px;margin:0 auto}
 .sec-label{
   color:var(--ice3);font-size:.85rem;font-weight:700;letter-spacing:4px;margin-bottom:12px;
@@ -189,7 +183,6 @@ section{padding:110px 6vw;max-width:1200px;margin:0 auto}
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
 
-/* ---------- about ---------- */
 .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:start}
 @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
 .about-text p{color:#c3d2dc;margin-bottom:18px;font-size:1.06rem}
@@ -210,7 +203,6 @@ section{padding:110px 6vw;max-width:1200px;margin:0 auto}
 .fact h3{font-size:1.02rem;font-weight:700;color:var(--white)}
 .fact p{font-size:.88rem;color:var(--muted)}
 
-/* ---------- expertise ---------- */
 .exp-wrap{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
 .card{
@@ -242,7 +234,6 @@ section{padding:110px 6vw;max-width:1200px;margin:0 auto}
   padding:4px 12px;border-radius:20px;
 }
 
-/* ---------- contact ---------- */
 .contact{text-align:center}
 .contact .sec-title{margin-bottom:18px}
 .contact .sub{color:var(--muted);max-width:520px;margin:0 auto 50px;font-size:1.05rem}
@@ -275,14 +266,12 @@ section{padding:110px 6vw;max-width:1200px;margin:0 auto}
 .contact-actions .btn{padding:13px 22px;font-size:.93rem}
 .contact-actions .btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 
-/* ---------- footer ---------- */
 footer{
   border-top:1px solid var(--line);padding:34px 6vw;text-align:center;
   color:var(--muted);font-size:.85rem;background:var(--bg2);
 }
 footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
 
-/* ---------- light zone (גוף האתר הבהיר) ---------- */
 .light{background:#f0f7fb;color:#26333d}
 .light .marquee{background:#e4eff6;border-color:rgba(43,62,78,.08)}
 .light .marquee::before{background:linear-gradient(270deg,#e4eff6,transparent)}
@@ -321,7 +310,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
 .light .btn-ghost{color:#2f6f96;border-color:#8fbcd4}
 .light .btn-ghost:hover{background:rgba(63,133,168,.08);box-shadow:0 10px 30px rgba(43,62,78,.12)}
 
-/* ---------- reveal ---------- */
 .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}
 .reveal.on{opacity:1;transform:translateY(0)}
 .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}
@@ -330,14 +318,11 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
 
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
-  /* לפס הטכנולוגיות נקבעת מהירות קבועה ב-JS (inline !important) שגוברת על חוק הקיצור כאן,
-     כדי שאנימציה אינסופית לא תרוץ במהירות מטורפת */
 }
 </style>
 </head>
 <body>
 
-<!-- ===== NAV ===== -->
 <nav id="nav">
   <a class="nav-brand" href="#top">
     <svg viewBox="0 0 100 100" aria-hidden="true">
@@ -360,7 +345,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
   </div>
 </nav>
 
-<!-- ===== HERO ===== -->
 <header class="hero" id="top">
   <canvas id="net"></canvas>
   <div class="hero-inner">
@@ -390,7 +374,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
 
 <div id="zone">
 <script>
-/* ברירת המחדל כהה; מופעל מוקדם כדי למנוע הבזק של התצוגה הלא-נכונה בטעינה */
 (function(){
   if(localStorage.getItem('mmk-theme')==='light'){
     document.getElementById('zone').classList.add('light');
@@ -398,7 +381,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
   }
 })();
 </script>
-<!-- ===== MARQUEE ===== -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track" id="mtrack">
     <span>C#</span><span>ASP.NET</span><span>Angular</span><span>TypeScript</span>
@@ -408,7 +390,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
   </div>
 </div>
 
-<!-- ===== ABOUT ===== -->
 <section id="about">
   <div class="sec-label reveal">אודות</div>
   <h2 class="sec-title reveal">מפתח שחי את <em>כל השכבות</em> של המערכת</h2>
@@ -459,7 +440,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
   </div>
 </section>
 
-<!-- ===== EXPERTISE ===== -->
 <div class="exp-wrap">
 <section id="expertise">
   <div class="sec-label reveal">תחומי התמחות</div>
@@ -505,7 +485,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
 </section>
 </div>
 
-<!-- ===== CONTACT ===== -->
 <section id="contact" class="contact">
   <div class="sec-label reveal">יצירת קשר</div>
   <h2 class="sec-title reveal">יש לכם פרויקט? <em>בואו נדבר</em></h2>
@@ -538,9 +517,8 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
     </div>
   </div>
 </section>
-</div><!-- /.light -->
+</div>
 
-<!-- ===== FOOTER ===== -->
 <footer>
   <svg class="mini-logo" viewBox="0 0 100 100" aria-hidden="true">
     <circle cx="50" cy="50" r="47" fill="#33414e" stroke="#cfe8f5" stroke-width="2.5"/>
@@ -554,7 +532,6 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
 </footer>
 
 <script>
-/* ---------- particle network (logo-line motif) ---------- */
 (function(){
   const cv=document.getElementById('net'),ctx=cv.getContext('2d');
   let W,H,pts=[];
@@ -595,23 +572,18 @@ footer .mini-logo{width:34px;height:34px;margin-bottom:10px;opacity:.85}
   })();
 })();
 
-/* ---------- nav shadow on scroll ---------- */
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
 
-/* ---------- reveal on scroll ---------- */
 const io=new IntersectionObserver(es=>es.forEach(e=>{
   if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}
 }),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-/* ---------- marquee: duplicate content for seamless loop ---------- */
 const mt=document.getElementById('mtrack');
 mt.innerHTML+=mt.innerHTML;
-/* מהירות קבועה: 30 פיקסלים לשנייה, לא משנה כמה רחב התוכן או מה הגדרות המערכת */
 mt.style.setProperty('animation-duration',(mt.scrollWidth/2/30)+'s','important');
 
-/* ---------- copy email ---------- */
 document.getElementById('copyBtn').addEventListener('click',async()=>{
   try{
     await navigator.clipboard.writeText('mmk90200@gmail.com');
@@ -620,7 +592,6 @@ document.getElementById('copyBtn').addEventListener('click',async()=>{
   }catch(e){}
 });
 
-/* ---------- theme toggle: משולב (בהיר) / כהה מלא ---------- */
 (function(){
   const zone=document.getElementById('zone'),wave=document.getElementById('wave'),
         btn=document.getElementById('themeBtn');
@@ -641,7 +612,6 @@ document.getElementById('copyBtn').addEventListener('click',async()=>{
   render();
 })();
 
-/* ---------- year ---------- */
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
