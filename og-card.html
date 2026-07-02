@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  width:1200px;height:630px;overflow:hidden;
+  font-family:'Heebo',Arial,sans-serif;
+  background:radial-gradient(ellipse 90% 80% at 70% 20%,#33414e 0%,#222c35 65%);
+  color:#f4f9fc;position:relative;
+  display:flex;align-items:center;justify-content:center;gap:80px;
+}
+.lines{position:absolute;inset:0;opacity:.35}
+.logo{width:270px;height:270px;flex-shrink:0;filter:drop-shadow(0 0 60px rgba(158,201,221,.4))}
+.txt{max-width:640px;text-align:right}
+h1{font-size:64px;font-weight:900;line-height:1.15;
+  background:linear-gradient(120deg,#f4f9fc 30%,#cfe8f5 70%,#9ec9dd 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.role{margin-top:14px;font-size:27px;font-weight:300;color:#9ec9dd;white-space:nowrap}
+.role b{font-weight:700;color:#cfe8f5}
+.line{width:90px;height:4px;border-radius:2px;margin:26px 0 26px auto;
+  background:linear-gradient(90deg,#cfe8f5,#9ec9dd)}
+.contact{font-size:24px;color:#8fa4b3;direction:ltr;text-align:right}
+.contact div{margin-top:6px}
+.contact span{color:#cfe8f5;font-weight:500}
+</style>
+</head>
+<body>
+<svg class="lines" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#9ec9dd" stroke-width="1" opacity=".25">
+    <line x1="60" y1="80" x2="300" y2="180"/><line x1="300" y2="60" x2="520" y1="180"/>
+    <line x1="900" y1="520" x2="1120" y2="420"/><line x1="1120" y1="420" x2="1180" y2="560"/>
+    <line x1="80" y1="540" x2="260" y2="470"/><line x1="1000" y1="90" x2="1160" y2="170"/>
+  </g>
+  <g fill="#cfe8f5" opacity=".4">
+    <circle cx="60" cy="80" r="3"/><circle cx="300" cy="180" r="4"/><circle cx="520" cy="60" r="3"/>
+    <circle cx="900" cy="520" r="4"/><circle cx="1120" cy="420" r="3"/><circle cx="1180" cy="560" r="3"/>
+    <circle cx="80" cy="540" r="3"/><circle cx="260" cy="470" r="4"/><circle cx="1000" cy="90" r="3"/><circle cx="1160" cy="170" r="4"/>
+  </g>
+</svg>
+<svg class="logo" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="47" fill="rgba(51,65,78,.7)" stroke="#cfe8f5" stroke-width="2"/>
+  <circle cx="30" cy="33" r="4.5" fill="none" stroke="#cfe8f5" stroke-width="2.5"/>
+  <line x1="41" y1="33" x2="73" y2="33" stroke="#cfe8f5" stroke-width="4" stroke-linecap="round"/>
+  <line x1="27" y1="45" x2="49" y2="45" stroke="#9ec9dd" stroke-width="4" stroke-linecap="round"/>
+  <line x1="56" y1="45" x2="73" y2="45" stroke="#9ec9dd" stroke-width="4" stroke-linecap="round"/>
+  <text x="50" y="77" text-anchor="middle" font-family="Heebo,Arial,sans-serif" font-weight="900" font-size="27" fill="#f4f9fc" letter-spacing="1">MMK</text>
+</svg>
+<div class="txt">
+  <h1>משה מרדכי קליין</h1>
+  <div class="role">מפתח <b>Full-Stack</b> · מערכות ארגוניות · טלפוניה &amp; IVR</div>
+  <div class="line"></div>
+  <div class="contact">
+    <div><span>mmk90200@gmail.com</span></div>
+    <div><span>053-3166888</span></div>
+  </div>
+</div>
+</body>
+</html>

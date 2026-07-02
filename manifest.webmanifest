@@ -1,0 +1,19 @@
+{
+  "name": "משה מרדכי קליין | MMK — פיתוח מערכות",
+  "short_name": "MMK",
+  "description": "משה מרדכי קליין — מפתח Full-Stack. מערכות ארגוניות, טלפוניה ו-IVR, בסיסי נתונים ואינטגרציות.",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#222c35",
+  "theme_color": "#222c35",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
